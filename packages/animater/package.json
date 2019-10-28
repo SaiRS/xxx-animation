@@ -1,0 +1,77 @@
+{
+  "name": "@xxx-animation/animater",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "SaiJx <xjiaxiang86@gmail.com>",
+  "homepage": "https://github.com/SaiRS/xxx-animation/tree/master/packages/animater#readme",
+  "license": "ISC",
+  "main": "lib/animater.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaiRS/xxx-animation.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "build:sass": "node-sass src/ -o dist/",
+    "release": "standard-version",
+    "jest:test": "cross-env NODE_ENV=test jest --coverage",
+    "jest:test:watch": "cross-env NODE_ENV=test jest --watchAll"
+  },
+  "bugs": {
+    "url": "https://github.com/SaiRS/xxx-animation/issues"
+  },
+  "devDependencies": {
+    "typescript": "^3.6.3",
+    "ts-node": "^8.4.1",
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-typescript": "^7.6.0",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-react": "^7.6.3",
+    "node-sass": "^4.12.0",
+    "@typescript-eslint/eslint-plugin": "^2.3.1",
+    "@typescript-eslint/parser": "^2.3.1",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-import-resolver-webpack": "^0.11.1",
+    "eslint-plugin-compat": "^3.3.0",
+    "eslint-plugin-eslint-comments": "^3.1.2",
+    "eslint-plugin-html": "^6.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.17.0",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^2.1.1",
+    "eslint-plugin-unicorn": "^12.0.1",
+    "eslint-plugin-xxx-eslint": "^0.2.4",
+    "prettier": "1.18.2",
+    "stylelint-config-prettier": "^5.1.0",
+    "stylelint-prettier": "^1.0.6",
+    "stylelint": "^10.0.1",
+    "stylelint-config-recommended": "^2.2.0",
+    "stylelint-config-css-modules": "^1.5.0",
+    "stylelint-no-unsupported-browser-features": "^3.0.2",
+    "@commitlint/config-conventional": "^8.2.0",
+    "@commitlint/cli": "^8.2.0",
+    "husky": "^3.0.5",
+    "standard-version": "^7.0.0",
+    "lint-staged": "^9.4.0",
+    "jest": "^24.7.1",
+    "babel-jest": "^24.9.0",
+    "@types/jest": "^24.0.0"
+  }
+}
