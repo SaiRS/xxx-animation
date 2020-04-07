@@ -1,3 +1,8 @@
+/* eslint-disable node/no-unsupported-features/node-builtins */
+/* eslint-disable @typescript-eslint/no-use-before-define */
+/* eslint-disable compat/compat */
+/* eslint-disable promise/always-return */
+/* eslint-disable promise/catch-or-return */
 // This optional code is used to register a service worker.
 // register() is not called by default.
 

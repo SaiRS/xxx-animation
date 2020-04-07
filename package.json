@@ -69,5 +69,8 @@
   },
   "dependencies": {
     "uuid": "^3.3.3"
+  },
+  "engines": {
+    "node" : ">=10.0"
   }
 }
