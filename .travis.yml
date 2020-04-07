@@ -18,18 +18,16 @@ jobs:
         skip_cleanup: true
         email: xjiaxiang86@gmail.com
         api_token:
-          secure: wtfhC0rBrnnas4bJtXBiaC++a+c4BdjPmfJAkSPqDZUYIFPbvoqRDoEC85Y0fOv9ix8akQYi3ZfPG535gIiWvXPgUNvzHi5xDVlpkPfAdoRQ0G5D1+6dyYX5M0QrspwNnV4R+PyMNLqjv2R9wE001Qi7dEaXGYf++ZZmpnAjmem35sjumGnSxTX9bziEsLwIYcLDdSvDeeL1kXqacqfyl1UkBzgq9mb0RdWbFCoKxwv0sqTAftSY4YvwHirkOd3Xy0Su/ESg1hdPY9tvnoW98z/a66OVU9fY1uq3U4/9JlhOZBkSx0RjPIp/eZNqEMG/oCBImujxbvh85Xy+VPwyEqE1OHaJhq1xx9h0SO3JUH9S4CjPF+ZSmsJpX0z/QkDL12CybjWPwCIH0uR0q9DuQVIyXodmNB/2qDDxrJUL8OdxAsnCA7yPdNZ1s6KQZ/yL2J3Itis1Be0/DXXANwlW6XDKE0/DIGPbyWcNLzR1G88d+bm6DaFDdG+Mn6e4ET899607IfTHIpvWTUjqNnG+MpV3A3K7WMPfGSFZpOhk2RgT7vgBGfYvncxcQhE0k5R1dQATChFE7096R0KB9tB0M4kvfnGRRY+ZhWBhJoI8AcYjjwfsC3/li2agcwXlGIYAPg4srf+YKGHdEgDNBtgIL4KP7D1Xke8WKykOA9rfVZU=
+          secure: f9VA6c6BIu4u2HDUN1PHsGjR3TOXQxGNamsoOI6IIhdHJOuDuLjjXVE/ocj6ISRSYPEDnXmd7UjWaY6IZJgCcOj/G+REl1YY4A/itUVEMNQ+PtaRbs7KZcaUmes12/wxQfLagu0bKdQbsqxrzrD3pIwpUyImWLuU8Vt5GTcxfC2s3YTKd/vv+DJ9DIbE5JNcPoy+br41+gPwoIZV6doFVifXgydHrfEp1YKrh4v9OIbqS1JJXVhqBVh4ASvVJp3Pzrdw2kLoWInryQIOXPFwHpScfO+IIQ4Gmg2XxDCA+Qv0aBaoko3NtnVDG1N6v71mvoomKrelKBYLxPWz6Nkg3WJsO15v7d+9GbJImuUZHxRQmu0VFjTP/80AiuhGDQAOm7UCRMsXThKqKF/17r/oDI7Sb+PL4cQcZ42ZGeJ3MJTK9zb1B7P5WJIRn907qkRS0XsYHSXWtn2Q3aIDXw4LAB3hLphvyEJFT0y0rEYUKL+Z0gKUzFODvwxLBFkFQlzD+Q3apf48laIXU5uGq4T1+Eave2zqESRh/cJw6DsO1USHYSQl4CYEg6S9j8rhscUK0TjUmL8s5uD9VGlyyS4RfqzTHbgSiCF7Y54TEPR8XN2FnrHh6j6vY49KzNfljhZ0C80XHfwUcQhZ2VJH3JOfCAru3FOVwKKrOvrMO2NHDEw=
         on:
           repo: SaiRS/xxx-animation
           branch: feature/example
-
     - language: node_js
       stage: build-2
       node_js: '10'
       name: build-2
       install: skip
       script: skip
-
 before_install: cd packages/example
 install: npm install
 after_success: npm run build
