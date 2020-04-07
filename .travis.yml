@@ -9,7 +9,10 @@ jobs:
     - language: node_js
       node_js: "10"
       name: "build-2"
+      install: skip
+      script: skip
 
+# 全局的
 before_install: "cd packages/example"
 install: "npm install"
 
