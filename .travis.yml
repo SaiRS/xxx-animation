@@ -1,6 +1,10 @@
 langauge: node_js
 node_js: "10"
 
+stages:
+  - stage-2
+  - stage-1
+
 jobs:
   include:
     - stage: "stage-1"
@@ -8,6 +12,7 @@ jobs:
       node_js: "10"
       name: "build-1"
     - language: node_js
+      stage: "stage-2"
       node_js: "10"
       name: "build-2"
       install: skip
