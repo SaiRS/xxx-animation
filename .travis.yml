@@ -15,7 +15,7 @@ jobs:
       name: build-1
       deploy:
         provider: npm
-        cleanup: false
+        skip_cleanup: true
         email: xjiaxiang86@gmail.com
         api_token:
           secure: wtfhC0rBrnnas4bJtXBiaC++a+c4BdjPmfJAkSPqDZUYIFPbvoqRDoEC85Y0fOv9ix8akQYi3ZfPG535gIiWvXPgUNvzHi5xDVlpkPfAdoRQ0G5D1+6dyYX5M0QrspwNnV4R+PyMNLqjv2R9wE001Qi7dEaXGYf++ZZmpnAjmem35sjumGnSxTX9bziEsLwIYcLDdSvDeeL1kXqacqfyl1UkBzgq9mb0RdWbFCoKxwv0sqTAftSY4YvwHirkOd3Xy0Su/ESg1hdPY9tvnoW98z/a66OVU9fY1uq3U4/9JlhOZBkSx0RjPIp/eZNqEMG/oCBImujxbvh85Xy+VPwyEqE1OHaJhq1xx9h0SO3JUH9S4CjPF+ZSmsJpX0z/QkDL12CybjWPwCIH0uR0q9DuQVIyXodmNB/2qDDxrJUL8OdxAsnCA7yPdNZ1s6KQZ/yL2J3Itis1Be0/DXXANwlW6XDKE0/DIGPbyWcNLzR1G88d+bm6DaFDdG+Mn6e4ET899607IfTHIpvWTUjqNnG+MpV3A3K7WMPfGSFZpOhk2RgT7vgBGfYvncxcQhE0k5R1dQATChFE7096R0KB9tB0M4kvfnGRRY+ZhWBhJoI8AcYjjwfsC3/li2agcwXlGIYAPg4srf+YKGHdEgDNBtgIL4KP7D1Xke8WKykOA9rfVZU=
