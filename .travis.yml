@@ -5,12 +5,16 @@ jobs:
   include:
     - language: node_js
       node_js: "10"
-      before_install: "cd packages/example"
-      install: "npm install"
-
-      script: "npm test" # 默认执行的脚本
-      after_success: "npm run build"
       name: "build-1"
+    - language: node_js
+      node_js: "10"
+      name: "build-2"
+
+before_install: "cd packages/example"
+install: "npm install"
+
+script: "npm test" # 默认执行的脚本
+after_success: "npm run build"
 
 notifications:
   email:
