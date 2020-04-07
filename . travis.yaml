@@ -1,2 +1,8 @@
 langauge: node_js
-node_js: '10'
+node_js: "10"
+
+before_install: "cd packages/example"
+install: "npm install"
+
+before_script: "npm test" # 默认执行的脚本
+after_success: "npm run build"
