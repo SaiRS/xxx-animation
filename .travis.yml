@@ -6,6 +6,8 @@ stages:
   - name: build
     if: branch = feature/example
 
+script: echo "Running tests against $(node -v) ..."
+
 jobs:
   include:
     - stage: "build"
