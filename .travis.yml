@@ -14,6 +14,11 @@ jobs:
       language: node_js
       node_js: "10"
       name: "build-1"
+      deploy:
+        provider: npm
+        api_key: $NPM_API_KEY
+        email: xjiaxiang86@gmail.com
+
     - language: node_js
       stage: "build-2"
       node_js: "10"
