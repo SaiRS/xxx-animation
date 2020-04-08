@@ -1,9 +1,11 @@
 language: node_js
 node_js: '10'
-stages:
-  - stage-2
-  - name: build
-    if: branch = feature/example
+
+#stages:
+#  - stage-2
+#  - name: build
+#    if: branch = feature/example
+
 cache:
   directories:
     - node_modules
@@ -15,24 +17,16 @@ jobs:
       name: build-1
       deploy:
         provider: npm
-        skip_cleanup: true
         email: xjiaxiang86@gmail.com
-        api_token:
-          secure: f9VA6c6BIu4u2HDUN1PHsGjR3TOXQxGNamsoOI6IIhdHJOuDuLjjXVE/ocj6ISRSYPEDnXmd7UjWaY6IZJgCcOj/G+REl1YY4A/itUVEMNQ+PtaRbs7KZcaUmes12/wxQfLagu0bKdQbsqxrzrD3pIwpUyImWLuU8Vt5GTcxfC2s3YTKd/vv+DJ9DIbE5JNcPoy+br41+gPwoIZV6doFVifXgydHrfEp1YKrh4v9OIbqS1JJXVhqBVh4ASvVJp3Pzrdw2kLoWInryQIOXPFwHpScfO+IIQ4Gmg2XxDCA+Qv0aBaoko3NtnVDG1N6v71mvoomKrelKBYLxPWz6Nkg3WJsO15v7d+9GbJImuUZHxRQmu0VFjTP/80AiuhGDQAOm7UCRMsXThKqKF/17r/oDI7Sb+PL4cQcZ42ZGeJ3MJTK9zb1B7P5WJIRn907qkRS0XsYHSXWtn2Q3aIDXw4LAB3hLphvyEJFT0y0rEYUKL+Z0gKUzFODvwxLBFkFQlzD+Q3apf48laIXU5uGq4T1+Eave2zqESRh/cJw6DsO1USHYSQl4CYEg6S9j8rhscUK0TjUmL8s5uD9VGlyyS4RfqzTHbgSiCF7Y54TEPR8XN2FnrHh6j6vY49KzNfljhZ0C80XHfwUcQhZ2VJH3JOfCAru3FOVwKKrOvrMO2NHDEw=
+        api_key:
+          secure: v62JWuoItVwItO1yZ4gH5gWNe/KoDE6UuAqrMpKFRYj/gggB2oJIk3r/+eqEwZ/BMdh+g4ktoDAjglxKnYZJhEOD02+kecpJs6x9wqVTxS+iD3Jh14X+2uhzedhNNa4T0nEePT7zDuGzfKaKaMsciGLTwPnLlYpHlWpEt8x+JeJJHSYj6/0G/jQ6gAXxuPsbuqa1jJNS+VBASdruSL/cCUBW2S30SLc6EIzhJcC3b7//cGrHjzCPU8fTer3Vkkpo62+eW0ka+A2Wcbikp/3Ml8fo4s2974oonFPHALMV4dRgM1AVu959I/jv61VEG9W+kV/+YaULExwf1exvKC18jQGlvqIhKA8Tvar76cS0DWlsZGIfJw/u/3t61tN8BLOL8N00zDhd8EgwSiAxUugrLrJ5lbV1ugqCTq0pBeo+k7wS+T6hcyCOQJqrwSiHY3E2AiFf0Ql+V4LzFs6+FszRZYs7skmq799xXTWvR4z/yfxCpoq25VrxT6Ajc4ASqwTZzXfNRIAigQJYc1fvdrfGJLhqUrBmsvMJCm+nREECRRsSuHbSQ6Agq8xqmDaMrDoug2FgmnC6m0AjB+QtS/DEqMYE7Alo3uc5eFeXFA4kYy6vO4w4HYCnpblfaTgSELjTDj4UgTOKDFzjbLQLTBeOL06ujrMshWr1bhE1kdm+a7Q=
         on:
           repo: SaiRS/xxx-animation
           branch: feature/example
-    - language: node_js
-      stage: build-2
-      node_js: '10'
-      name: build-2
-      install: skip
-      script: skip
 
 before_install: cd packages/example
 install: npm install
 after_success: npm run build
-
 notifications:
   email:
     recipients:
